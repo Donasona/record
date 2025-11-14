@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Record List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>MARK</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for data in read %}
+            <tr>
+                <td>{{data.name}}</td>
+                <td>{{data.age}}</td>
+                <td>{{data.mark}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
