@@ -36,12 +36,6 @@ class Updateview(View):
         update.save()
         return render(request,"update.html")
     
-class Deleteview(View):
-    def get(self,request,**kwargs):
-        delete_id = kwargs.get("pk")
-        delete = Recordmodel.objects.get(id=delete_id)
-        delete.delete()
-        return render(request,"read.html")
 
         
     
